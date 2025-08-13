@@ -29,7 +29,7 @@ To get a copy of this project up and running on your local machine, follow these
 
 2. Navigate to the project directory:
    ```
-   cd my-react-ts-app
+   cd hooksTS
    ```
 
 3. Install the dependencies:
