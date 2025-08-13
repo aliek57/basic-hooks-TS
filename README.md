@@ -1,4 +1,4 @@
-# My React TypeScript App
+# React - Exploring Hooks with TypeScript
 
 This project is a React application built with TypeScript that demonstrates the use of hooks and context for managing theme state. The application allows users to toggle between light and dark themes.
 
