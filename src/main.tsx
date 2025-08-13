@@ -1,19 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
-import App from './App.tsx';
+import { RouterProvider } from 'react-router-dom';
 import './index.css'
 import { ThemeProvider } from './contexts/ThemeContext.tsx';
+import { IndexRoutes } from './routes/index.tsx';
 
 const rootElement = document.getElementById('root')!;
 const root = ReactDOM.createRoot(rootElement);
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <ThemeProvider>
-        <App />
-      </ThemeProvider>
-    </BrowserRouter>
+    <ThemeProvider>
+      <RouterProvider router={IndexRoutes} />
+    </ThemeProvider>
   </React.StrictMode>
 );

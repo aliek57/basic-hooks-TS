@@ -2,16 +2,16 @@ import {useState, useMemo, useCallback} from 'react'
 import './Calculos.css'
 
 const Calculos: React.FC = () => {
-    const [numero, setNumero] = useState([1, 2, 3]);
+    const [numero, setNumero] = useState<number[]>([1, 2, 3]);
 
     // useMemo vai guardar o resultado da função 
-    const soma = useMemo(() => {
+    const soma = useMemo<number>(() => {
         console.log("Calculando soma");
         return numero.reduce((a,b) => a+b, 0);
     }, [numero]); // Se o array mudar a função vai ser recalculada e mostrar o novo resultado
 
     // useCallback vai guardar a função
-    const filtrarPares = useCallback(() => {
+    const filtrarPares = useCallback<() => number[]>(() => {
         console.log("Filtrando pares");
         return numero.filter(num => num%2 == 0);
     }, [numero]); // Se o array mudar a função vai ser recriada

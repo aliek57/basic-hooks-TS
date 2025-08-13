@@ -1,13 +1,13 @@
 import { NavLink } from "react-router-dom"
-import './Navbar.module.css'
+import styles from './Navbar.module.css'
 
 const Navbar: React.FC = () => {
   return (
     <nav>
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='/state'>useState</NavLink>
-        <NavLink to='/effect'>useEffect</NavLink>
-        <NavLink to='/memo'>useMemo</NavLink>
+        <NavLink to='/' className={({ isActive }) => isActive ? styles.active : undefined}>Home</NavLink>
+        <NavLink to='/state' className={({ isActive }) => isActive ? styles.active : undefined}>useState</NavLink>
+        <NavLink to='/effect' className={({ isActive }) => isActive ? styles.active : undefined}>useEffect</NavLink>
+        <NavLink to='/memo' className={({ isActive }) => isActive ? styles.active : undefined}>useMemo</NavLink>
     </nav>
   )
 }

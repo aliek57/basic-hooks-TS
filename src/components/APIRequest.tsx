@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 
 const APIRequest: React.FC = () => {
-    const [imagem, setImagem] = useState();
+    const [imagem, setImagem] = useState<string>();
 
     useEffect(() => {
         fetch("https://dog.ceo/api/breeds/image/random")

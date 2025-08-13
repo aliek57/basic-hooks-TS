@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Contador.css'
 
 const Contador: React.FC = () => {
-    const [contador, setContador] = useState(0);
+    const [contador, setContador] = useState<number>(0);
   return (
     <div className='Contador'>
         <h3>Contador: {contador}</h3>
