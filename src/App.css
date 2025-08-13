@@ -1,0 +1,26 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  text-align: center;
+}
+
+.App {
+  padding: 2rem;
+  min-height: 100vh;
+}
+
+.HookState,
+.HookEffect,
+.HookMemo {
+  margin: 2rem auto;
+  max-width: 600px;
+}
+
+#info {
+  margin-top: 8px;
+  color: #a09f9f
+}
+
+.highlight {
+  font-weight: bold;
+}
